@@ -1,0 +1,18 @@
+@media (max-width: 760px) {
+  .nav-menu {
+    position: absolute;
+    top: 72px;
+    right: 1.4rem;
+    left: 1.4rem;
+    padding: 1rem;
+    border: 1px solid var(--line);
+    background: rgba(7, 17, 31, 0.95);
+    border-radius: 18px;
+    display: none;
+    flex-direction: column;
+  }
+
+  .nav-menu.mobile-open {
+    display: flex;
+  }
+}
