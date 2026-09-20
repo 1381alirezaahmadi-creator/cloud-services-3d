@@ -1,18 +1,59 @@
-@media (max-width: 760px) {
+@media (max-width: 980px) {
+  .hero,
+  .feature-panel,
+  .contact {
+    grid-template-columns: 1fr;
+  }
+
+  .services-grid,
+  .pricing-grid,
+  .testimonial-grid,
+  .stats,
+  .info-strip {
+    grid-template-columns: 1fr;
+  }
+
   .nav-menu {
-    position: absolute;
-    top: 72px;
-    right: 1.4rem;
-    left: 1.4rem;
-    padding: 1rem;
-    border: 1px solid var(--line);
-    background: rgba(7, 17, 31, 0.95);
-    border-radius: 18px;
     display: none;
-    flex-direction: column;
+  }
+
+  .hamburger {
+    display: flex;
   }
 
   .nav-menu.mobile-open {
+    position: absolute;
+    top: 76px;
+    right: 1.2rem;
+    left: 1.2rem;
+    padding: 1rem;
+    border: 1px solid var(--line);
+    background: rgba(7, 17, 29, 0.98);
+    border-radius: 18px;
     display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.7rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero {
+    min-height: unset;
+    padding-top: 2rem;
+  }
+
+  .hero h1 {
+    font-size: 2.4rem;
+  }
+
+  .nav-button {
+    display: none;
+  }
+
+  .hero-actions,
+  .hero-stats {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }

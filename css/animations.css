@@ -1,0 +1,35 @@
+@keyframes floatCard {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.info-box,
+.service-card,
+.price-card,
+.quote-card,
+.contact-form {
+  animation: floatCard 8s ease-in-out infinite;
+}
+
+.service-card:nth-child(2),
+.price-card:nth-child(2),
+.quote-card:nth-child(2) {
+  animation-delay: 0.7s;
+}
+
+.service-card:nth-child(3),
+.price-card:nth-child(3),
+.quote-card:nth-child(3) {
+  animation-delay: 1.2s;
+}
